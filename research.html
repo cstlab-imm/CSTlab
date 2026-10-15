@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Lab - 研究主題 | 免疫與發炎生物學研究室</title>
+    <meta name="description" content="本實驗室三大研究主題：嗜中性白血球機制、樹突細胞與免疫佐劑、精準檢測與免疫平台。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">CST lab</a>
+            </div>
+            <button class="hamburger" aria-label="選單">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">實驗室簡介</a></li>
+                <li class="nav-item"><a href="research.html">研究主題</a></li>
+                <li class="nav-item"><a href="news.html">最新消息</a></li>
+                <li class="nav-item"><a href="pi.html">實驗室主持人</a></li>
+                <li class="nav-item"><a href="members.html">實驗室成員</a></li>
+                <li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>研究主題</h1>
+            <p>Research Focus & Core Directions</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <section style="margin-bottom: 4rem;">
+            <h2 class="section-title">研究核心主題 / Research Focus</h2>
+            <p style="margin-bottom: 0.75rem; font-size: 1.1rem; font-weight: 600; color: var(--primary-color);">
+                我們的研究團隊聚焦的三大主題：</p>
+            <ol style="padding-left: 2.5rem; margin-bottom: 1.5rem; line-height: 2; font-size: 1.05rem;">
+                <li>嗜中性白血球參與發炎性疾病的機轉與角色。</li>
+                <li>樹突狀細胞生物學在發展癌症疫苗及佐劑研發的關鍵角色。</li>
+                <li>結合臨床醫學而建立的獨特免疫檢測平台。</li>
+            </ol>
+            <p style="margin-bottom: 3rem; color: var(--text-muted); font-size: 1rem; line-height: 1.8;">
+                Our research team had been investigating the physiological roles of innate immune receptors and
+                regulators, examining how they affect host immune responses. We also studied their pathological
+                roles in breaking down immune resilience and homeostasis.
+            </p>
+
+
+            <!-- 橫向圓圈圖示導覽列 (Horizontal Circle Icon Navigation) -->
+            <div class="topic-nav-container" id="research-nav">
+                <div class="topic-nav-header">
+                    <span class="topic-nav-badge"><i class="fas fa-compass"></i> 研究主題導覽</span>
+                </div>
+                <nav class="topic-circle-nav" aria-label="研究主題導覽選單">
+                    <a href="#topic-neutrophil" class="topic-circle-item" data-topic="topic-neutrophil"
+                        title="點擊查看：嗜中性白血球參與發炎性疾病的機轉與角色">
+                        <div class="topic-circle-icon-wrapper">
+                            <div class="topic-circle-icon">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <span class="topic-index-badge">01</span>
+                        </div>
+                        <span class="topic-circle-title">嗜中性白血球與發炎機轉</span>
+                        <span class="topic-circle-sub">Neutrophil Biology</span>
+                    </a>
+
+                    <a href="#topic-dendritic" class="topic-circle-item" data-topic="topic-dendritic"
+                        title="點擊查看：樹突狀細胞生物學在發展癌症疫苗及佐劑研發的關鍵角色">
+                        <div class="topic-circle-icon-wrapper">
+                            <div class="topic-circle-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <span class="topic-index-badge">02</span>
+                        </div>
+                        <span class="topic-circle-title">樹突細胞與癌症佐劑</span>
+                        <span class="topic-circle-sub">DC Biology & Vaccines</span>
+                    </a>
+
+                    <a href="#topic-nlrp12" class="topic-circle-item" data-topic="topic-nlrp12"
+                        title="點擊查看：先天免疫檢查點NLRP12">
+                        <div class="topic-circle-icon-wrapper">
+                            <div class="topic-circle-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <span class="topic-index-badge">03</span>
+                        </div>
+                        <span class="topic-circle-title">先天免疫檢查點 NLRP12</span>
+                        <span class="topic-circle-sub">NLRP12 Checkpoint</span>
+                    </a>
+
+                    <a href="#topic-sle" class="topic-circle-item" data-topic="topic-sle" title="點擊查看：紅斑性狼瘡的致病機轉與治療">
+                        <div class="topic-circle-icon-wrapper">
+                            <div class="topic-circle-icon">
+                                <i class="fas fa-heart-pulse"></i>
+                            </div>
+                            <span class="topic-index-badge">04</span>
+                        </div>
+                        <span class="topic-circle-title">紅斑性狼瘡致病與治療</span>
+                        <span class="topic-circle-sub">SLE Pathogenesis</span>
+                    </a>
+
+                    <a href="#topic-platform" class="topic-circle-item" data-topic="topic-platform"
+                        title="點擊查看：結合臨床醫學所需的免疫檢測平台">
+                        <div class="topic-circle-icon-wrapper">
+                            <div class="topic-circle-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <span class="topic-index-badge">05</span>
+                        </div>
+                        <span class="topic-circle-title">臨床免疫檢測平台</span>
+                        <span class="topic-circle-sub">Translational Platform</span>
+                    </a>
+
+
+                </nav>
+            </div>
+
+            <!-- 詳細文章內容區塊 (Detailed Research Articles) -->
+            <div class="research-topic-list">
+                <!-- Topic 1 -->
+                <article class="research-topic-card" id="topic-neutrophil">
+                    <div class="topic-card-header">
+                        <div class="topic-card-title-group">
+                            <div class="topic-card-icon-badge">
+                                <i class="fas fa-shield-virus"></i>
+                            </div>
+                            <div class="topic-card-heading">
+                                <h3>嗜中性白血球參與發炎性疾病的機轉與角色</h3>
+                                <div class="topic-en-title">Mechanisms and Pathological Roles of Neutrophils in
+                                    Inflammatory Diseases</div>
+                            </div>
+                        </div>
+                        <a href="#research-nav" class="back-to-nav-btn" title="返回導覽列">
+                            <i class="fas fa-arrow-up"></i> 返回主題導覽
+                        </a>
+                    </div>
+                    <div class="topic-content-grid">
+                        <div class="topic-text">
+                            <p> Neutrophils are the most abundant leukocyte population in the circulation and play a
+                                critical role in immune surveillance through pathogen phagocytosis and the formation of
+                                neutrophil extracellular traps (NETs). While NETs are essential for controlling
+                                microbial infections, a variety of endogenous stimuli—including immune complexes,
+                                advanced glycation end products (AGEs), and damage-associated molecular pattern (DAMP)
+                                molecules—can also induce NET formation. Aberrant NET release triggered by these
+                                self-derived signals has been implicated in the pathogenesis of several inflammatory
+                                diseases, such as systemic lupus erythematosus (SLE), rheumatoid arthritis,
+                                cardiovascular disorders, and age-related inflammation. These stimuli can disrupt
+                                mitochondrial homeostasis, leading to the release of mitochondrial reactive oxygen
+                                species (ROS) and mitochondrial DNA (mtDNA), which further propagate inflammatory
+                                responses and contribute to metabolic dysregulation and cellular dysfunction. Our
+                                research utilizes multiple experimental platforms to investigate how DAMP-induced
+                                metabolic reprogramming, mitochondrial dysregulation, and NET formation in neutrophils
+                                contribute to the development and progression of inflammatory diseases.</p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject1.png" alt="Mechanisms and Pathological Roles of Neutrophils in
+                                    Inflammatory Diseases" class="topic-image"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-shield-virus"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Topic 2 -->
+                <article class="research-topic-card" id="topic-dendritic">
+                    <div class="topic-card-header">
+                        <div class="topic-card-title-group">
+                            <div class="topic-card-icon-badge">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <div class="topic-card-heading">
+                                <h3>樹突狀細胞生物學在發展癌症疫苗及佐劑研發的關鍵角色</h3>
+                                <div class="topic-en-title">Dendritic Cell Biology in Cancer Vaccine Development and
+                                    Novel Adjuvants</div>
+                            </div>
+                        </div>
+                        <a href="#research-nav" class="back-to-nav-btn" title="返回導覽列">
+                            <i class="fas fa-arrow-up"></i> 返回主題導覽
+                        </a>
+                    </div>
+                    <div class="topic-content-grid"
+                        style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px dashed var(--border-color);">
+                        <div class="topic-text">
+                            <h4>CLEC5A: Linking Innate Immune Recognition to Adaptive T-Cell Immunity</h4>
+                            <p>
+                                Our research investigates how innate immune receptors shape host immunity and influence
+                                adaptive immune responses. We focus on CLEC5A, a pattern recognition receptor that
+                                regulates dendritic cell (DC) activation and antigen presentation. We have investigated
+                                how CLEC5A signaling regulates phagosomal acidification, thereby shaping antigen
+                                processing and cross-presentation by DCs. By modulating these processes, CLEC5A
+                                signaling can influence the clonality and diversity of antigen-specific T-cell
+                                responses, particularly cytotoxic CD8⁺ T cells.
+                            </p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject2-1.png"
+                                alt="CLEC5A: Linking Innate Immune Recognition to Adaptive T-Cell Immunity"
+                                class="topic-image"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-dna"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================= 第二小節：段落 2 與 圖 2 對齊 ================= -->
+                    <div class="topic-content-grid"
+                        style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px dashed var(--border-color);">
+                        <div class="topic-text">
+                            <h4>CLEC5A-Targeted Nanovaccines for Antigen-Specific T-Cell Responses</h4>
+
+                            <p>Building on these findings, we are developing protein-based nanoparticles (PNPs) that
+                                incorporate a CLEC5A ligand on their hydrophilic shell and encapsulate hydrophobic
+                                antigens within their core. This platform aims to integrate targeted innate receptor
+                                engagement with efficient antigen delivery, promoting DC-mediated priming and expansion
+                                of antigen-specific cytotoxic T cells. In tumor-bearing mice, CLEC5A-targeted PNP
+                                vaccination has the potential to enhance antigen cross-presentation in lymphoid tissues,
+                                strengthen antitumor CD8⁺ T-cell responses, and reduce tumor burden. Ultimately, this
+                                approach may provide a strategy for designing nanovaccines that shape the clonality and
+                                functional diversity of antigen-specific T cells through coordinated innate immune
+                                activation and antigen delivery.
+                            </p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject2-2.jpg"
+                                alt="CLEC5A-Targeted Nanovaccines for Antigen-Specific T-Cell Responses"
+                                class="topic-image"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-dna"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ================= 第三小節：段落 3 與 圖 3 對齊 ================= -->
+                    <div class="topic-content-grid"
+                        style="margin-bottom: 2.5rem; padding-bottom: 2rem; border-bottom: 1px dashed var(--border-color);">
+                        <div class="topic-text">
+                            <h4>CLEC5A-Dependent γδT17–DC Crosstalk in Cytotoxic T-Cell Immunity</h4>
+
+
+                            <p>A second research direction explores how CLEC5A signaling regulates γδ T-cell activation
+                                and IL-17 production. We have established an in vitro γδ T-cell expansion platform to
+                                investigate the molecular mechanisms governing γδT17 differentiation and function in
+                                response to cytokines, including IL-1β and IL-23, and to pathogen-activated DCs.
+                                Our findings indicate that CLEC5A-dependent DC activation supports γδT17 responses
+                                during infection. In turn, IL-17 and CD40L-mediated interactions between γδT17 cells and
+                                DCs promote DC activation and co-stimulatory capacity, facilitating antigen-specific
+                                CD8⁺ T-cell responses. This reciprocal communication between innate immune sensing and
+                                γδT17 cells provides insight into how local immune networks coordinate DC licensing and
+                                cytotoxic T-cell immunity during infection.
+                            </p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject2-3.png"
+                                alt="CLEC5A-Dependent γδT17–DC Crosstalk in Cytotoxic T-Cell Immunity"
+                                class="topic-image"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-dna"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Topic 3 -->
+                <article class="research-topic-card" id="topic-nlrp12">
+                    <div class="topic-card-header">
+                        <div class="topic-card-title-group">
+                            <div class="topic-card-icon-badge">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="topic-card-heading">
+                                <h3>先天免疫檢查點 NLRP12</h3>
+                                <div class="topic-en-title">NLRP12: An Innate Immune Checkpoint in Inflammatory
+                                    Homeostasis
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#research-nav" class="back-to-nav-btn" title="返回導覽列">
+                            <i class="fas fa-arrow-up"></i> 返回主題導覽
+                        </a>
+                    </div>
+                    <div class="topic-content-grid">
+                        <div class="topic-text">
+                            <p>
+                                NLRP12 regulates signaling pathways activated by Toll-like receptors (TLRs), RIG-I-like
+                                receptors (RLRs), and the cGAS–STING pathway, thereby modulating proinflammatory
+                                cytokine production and type I interferon (IFN-I) responses. Based on these findings, we
+                                proposed the concept of NLRP12 as an innate immune checkpoint (Cell Host & Microbe,
+                                2019; Journal of Clinical Investigation, 2023).
+
+                            </p>
+                            <p>
+                                We are investigating the roles of NLRP12 in inflammatory diseases, including systemic
+                                lupus erythematosus (SLE), sepsis, arthritis, and vascular stiffness, with a particular
+                                focus on dysregulated IFN-I signaling, neutrophil dysfunction, and aberrant neutrophil
+                                extracellular trap (NET) formation. Our research connects innate immune sensing and
+                                IFN-I regulation with neutrophil fate and inflammatory homeostasis in infection and
+                                autoimmunity.
+                            </p>
+                            <p>
+                                Together, these studies support a conceptual framework in which innate immunity is
+                                actively regulated by checkpoint mechanisms that help preserve immune homeostasis and
+                                resilience. By bridging fundamental immunology with translational research, we aim to
+                                clarify how NLRP12 limits excessive inflammation while maintaining protective host
+                                defense. This work may inform the development of disease biomarkers, targeted
+                                immunomodulatory strategies, and the identification of additional innate immune
+                                checkpoints that help balance host protection against immunopathology.
+                            </p>
+                            <p>
+                                Forthcoming work: Nature Communications (anticipated, 2027).
+                            </p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject3-1.png" alt="NLRP12: An Innate Immune Checkpoint in Inflammatory Homeostasis
+" class="topic-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <img src="images/subject3-2.jpg" alt="NLRP12: An Innate Immune Checkpoint in Inflammatory Homeostasis
+" class="topic-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-atom"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Topic 4 -->
+                <article class="research-topic-card" id="topic-sle">
+                    <div class="topic-card-header">
+                        <div class="topic-card-title-group">
+                            <div class="topic-card-icon-badge">
+                                <i class="fas fa-heart-pulse"></i>
+                            </div>
+                            <div class="topic-card-heading">
+                                <h3>紅斑性狼瘡的致病機轉與治療</h3>
+                                <div class="topic-en-title">Pathogenesis and Targeted Therapeutic Strategies for
+                                    Systemic Lupus Erythematosus</div>
+                            </div>
+                        </div>
+                        <a href="#research-nav" class="back-to-nav-btn" title="返回導覽列">
+                            <i class="fas fa-arrow-up"></i> 返回主題導覽
+                        </a>
+                    </div>
+                    <div class="topic-content-grid">
+                        <div class="topic-text">
+                            <p>
+                                經過半世紀的努力，紅斑性狼瘡已非絕症，狼瘡病人的存活已大幅改善。多數的藥物已能夠穩定的控制病人的疾病活動度，然而針對紅斑性狼瘡病人進展成棘手的狼瘡性腎炎以及神經性症狀給予有效且低副作用的藥物控制仍是醫學上未滿足的需求。由於紅斑性狼瘡無法完全治癒，只能透過藥物及良好的生活及飲食習慣控制病情，因此病人須終身使用藥物。以往用於治療器官侵犯如狼瘡腎炎的小分子藥物以及單株抗體生物製劑，以靶向後天免疫系統活化亦即T與B淋巴球的活化為主。由於生物製劑價格昂貴，因此多數病人在沒有保險及健保補助下，仍以小分子藥物緩步降低自身免疫活化的情況，以達到穩定病情的目標。這些藥物雖然是免疫調節劑，但仍然屬於廣效的免疫抑制劑，長期服用後會出現感染及惡性腫瘤等嚴重的副作用。免疫學的進展讓科學家更了解紅斑性狼瘡的致病機轉，現今的研究趨勢指出先天免疫活化的路徑是紅斑性狼瘡病患免疫活化的起點，該路徑也在致病機轉扮演吃重的角色。目前除了已有新核准的莎芙諾®注射劑用來抑制第一型干擾素受體訊號，但該藥屬於藥價高昂的生物製劑，若能開發用以阻斷先天免疫系統活化途徑的可口服之小分子標的藥物，例如胞內核酸受體cGAS、阻斷粒線體氧化壓力、以及阻斷中性球特異性死亡等途徑，可望從源頭阻絕免疫系統活化，為穩定病患疾病活性提出更為經濟的新解方。另外，我們的研究團隊也引進先天免疫檢查點NLRP12，用以輔助評估病人對於藥物治療的反應
+                                (Journal
+                                of Clinical Investigation, 2023)。相關的研究仍持續進行中。
+                            </p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject5.png" alt="Pathogenesis and Targeted Therapeutic Strategies for
+                                    Systemic Lupus Erythematosus" class="topic-image"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-heart-pulse"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- Topic 5 -->
+                <article class="research-topic-card" id="topic-platform">
+                    <div class="topic-card-header">
+                        <div class="topic-card-title-group">
+                            <div class="topic-card-icon-badge">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <div class="topic-card-heading">
+                                <h3>結合臨床醫學所需的免疫檢測平台</h3>
+                                <div class="topic-en-title">Translational Immune Diagnostic Platforms for Clinical
+                                    Medicine</div>
+                            </div>
+                        </div>
+                        <a href="#research-nav" class="back-to-nav-btn" title="返回導覽列">
+                            <i class="fas fa-arrow-up"></i> 返回主題導覽
+                        </a>
+                    </div>
+                    <div class="topic-content-grid">
+                        <div class="topic-text">
+                            <p>
+                                We established a platform to validate the accuracy of the T cell recognition peptides,
+                                typically derived from algorithms. In fact, outcomes of peptide prediction are not
+                                always compatible with real-world immune responses. This discrepancy arises because
+                                peptide prediction algorithms are primarily based on HLA structure and the peptide-HLA,
+                                often overlooking the natural process of antigen cross-presentation in dendritic cells.
+                                Therefore, this in vitro platform helps bridge this gap by enabling antigen presentation
+                                using actual proteins. This allows dendritic cells to activate T cells with the natural
+                                selected peptides within the context of antigen presentation, rather than relying solely
+                                on peptides selected by artificial algorithms. Our tool offers a physiologically
+                                relevant method for validating candidate peptides, enabling the analysis of
+                                epitope-specific T cell immune responses. The dominant T cell clones generated by this
+                                platform are also valuable for diagnosis and their application in cancer immunotherapy.
+                            </p>
+                        </div>
+                        <div class="topic-image-container">
+                            <img src="images/subject4.png" alt="Translational Immune Diagnostic Platforms for Clinical
+                                    Medicine" class="topic-image"
+                                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="topic-image-placeholder" style="display: none;">
+                                <i class="fas fa-microscope"></i>
+                                <span>研究示意圖 / 圖片空間</span>
+                                <small>可於 &lt;img src=""&gt; 填入圖片路徑</small>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="https://www.nycu.edu.tw/nycu/ch/index" target="_blank" rel="noopener noreferrer">
+                    <img src="images/viewtopimage.svg" alt="國立陽明交通大學" class="footer-nycu-logo">
+                </a>
+                <a href="https://icm.nycu.edu.tw/" target="_blank" rel="noopener noreferrer"
+                    class="footer-institute-link">臨床醫學研究所</a>
+                <div class="footer-lab-title">陳斯婷老師實驗室</div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; font-family: var(--font-heading);">聯絡我們</h4>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem;"><i
+                        class="fas fa-map-marker-alt"></i> 112台北市北投區立農街二段155號 守仁樓2樓</p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem;"><i
+                        class="fas fa-phone-alt"></i> 02-28267000 #66519</p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9);"><i class="fas fa-envelope"></i>
+                    chensztin@nycu.edu.tw</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CST Lab 免疫與發炎生物學研究室. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- 圖片放大燈箱 (Image Lightbox Modal) -->
+    <div id="image-modal" class="image-modal">
+        <span class="image-modal-close" id="modal-close">&times;</span>
+        <div class="image-modal-content">
+            <img id="modal-img" src="" alt="放大圖">
+            <div id="modal-caption" class="image-modal-caption"></div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

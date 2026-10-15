@@ -1,0 +1,13 @@
+# Windows thumbnail cache and desktop config
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS metadata
+.DS_Store
+
+# IDE & Editor folders
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

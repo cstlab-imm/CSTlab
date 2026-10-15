@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Lab - CONTACT | 免疫與發炎生物學研究室</title>
+    <meta name="description" content="本實驗室聯絡方式、研究室地址、交通指南與線上留言諮詢表單。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">CST <span class="logo-accent">Lab</span></a>
+            </div>
+            <button class="hamburger" aria-label="選單">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">實驗室簡介</a></li>
+                <li class="nav-item"><a href="research.html">研究主題</a></li>
+                <li class="nav-item"><a href="news.html">最新消息</a></li>
+                <li class="nav-item"><a href="pi.html">實驗室主持人</a></li>
+                <li class="nav-item"><a href="members.html">實驗室成員</a></li>
+                <li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>聯絡我們</h1>
+            <p>Get in Touch with Us</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="contact-grid">
+            <!-- Left: Contact Details -->
+            <div class="contact-info">
+                <div>
+                    <h2 class="section-title">聯絡資訊 / Info</h2>
+                    <p style="margin-bottom: 2rem; color: var(--text-muted);">
+                        歡迎學術界、醫療界與業界專家進行合作洽談；若您對本實驗室研究有興趣，也歡迎報考碩博士班、申請專題生或博士後研究職缺。</p>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4 style="color: var(--primary-color); font-family: var(--font-heading);">地址 / Address</h4>
+                        <p style="font-size: 0.95rem;">112 台北市北投區立農街二段155號<br>國立陽明交通大學陽明校區 守仁樓 2樓</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4 style="color: var(--primary-color); font-family: var(--font-heading);">電子郵件 / Email</h4>
+                        <p style="font-size: 0.95rem;">chensztin@nycu.edu.tw</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4 style="color: var(--primary-color); font-family: var(--font-heading);">電話 / Phone</h4>
+                        <p style="font-size: 0.95rem;">02-28267000 #66519</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="contact-form">
+                <h3 style="color: var(--primary-color); margin-bottom: 1.5rem; font-family: var(--font-heading);">線上留言表單
+                </h3>
+                <form id="contact-form-element" onsubmit="handleContactSubmit(event)">
+                    <div class="form-group">
+                        <label for="user-name">您的姓名：</label>
+                        <input type="text" id="user-name" class="form-control" required placeholder="例如：王小明">
+                    </div>
+                    <div class="form-group">
+                        <label for="user-email">聯絡信箱：</label>
+                        <input type="email" id="user-email" class="form-control" required
+                            placeholder="username@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-subject">主旨：</label>
+                        <input type="text" id="message-subject" class="form-control" required
+                            placeholder="如：專案合作諮詢 / 應徵專題生">
+                    </div>
+                    <div class="form-group">
+                        <label for="message-content">內容：</label>
+                        <textarea id="message-content" class="form-control" rows="5" required
+                            placeholder="請在此輸入您的留言內容..."></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">發送留言</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Google Map Embedding (Taiwan Yang-Ming Campus) -->
+        <section style="margin-top: 4rem;">
+            <h2 class="section-title">位置導航 / Map</h2>
+            <div
+                style="width: 100%; height: 400px; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-md); border: 1px solid var(--border-color);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4285.121719012489!2d121.511301575928!3d25.11930203485027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ae607218a317%3A0x5ee74377bf928f57!2z5ZyL56uL6Zm95piO5Lqk6YCa5aSn5a246Zm95piO5qCh5Y2A!5e1!3m2!1szh-TW!2stw!4v1787941159863!5m2!1szh-TW!2stw"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="https://www.nycu.edu.tw/nycu/ch/index" target="_blank" rel="noopener noreferrer">
+                    <img src="images/viewtopimage.svg" alt="國立陽明交通大學" class="footer-nycu-logo">
+                </a>
+                <a href="https://icm.nycu.edu.tw/" target="_blank" rel="noopener noreferrer"
+                    class="footer-institute-link">臨床醫學研究所</a>
+                <div class="footer-lab-title">陳斯婷老師實驗室</div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; font-family: var(--font-heading);">聯絡我們</h4>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem;"><i
+                        class="fas fa-map-marker-alt"></i> 112台北市北投區立農街二段155號 守仁樓2樓</p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem;"><i
+                        class="fas fa-phone-alt"></i> 02-28267000 #66519</p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9);"><i class="fas fa-envelope"></i>
+                    chensztin@nycu.edu.tw</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CST Lab 免疫與發炎生物學研究室. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+    <script>
+        function handleContactSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('user-name').value;
+            const email = document.getElementById('user-email').value;
+            const subject = document.getElementById('message-subject').value;
+            const content = document.getElementById('message-content').value;
+
+            const body = `姓名：${name}%0D%0A聯絡信箱：${email}%0D%0A%0D%0A留言內容：%0D%0A${encodeURIComponent(content)}`;
+            const mailtoLink = `mailto:chensztin@nycu.edu.tw?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+            // 開啟預設郵件軟體
+            window.location.href = mailtoLink;
+        }
+    </script>
+</body>
+
+</html>

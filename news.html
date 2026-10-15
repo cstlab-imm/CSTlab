@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CST Lab - 最新消息 | 免疫與發炎生物學研究室</title>
+    <meta name="description" content="本實驗室之最新研究成果、公告、活動照片與最新消息發布。">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">CST <span class="logo-accent">Lab</span></a>
+            </div>
+            <button class="hamburger" aria-label="選單">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html">實驗室簡介</a></li>
+                <li class="nav-item"><a href="research.html">研究主題</a></li>
+                <li class="nav-item"><a href="news.html">最新消息</a></li>
+                <li class="nav-item"><a href="pi.html">實驗室主持人</a></li>
+                <li class="nav-item"><a href="members.html">實驗室成員</a></li>
+                <li class="nav-item"><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>最新消息</h1>
+            <p>Latest News & Research Updates</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="blog-layout">
+            <!-- Blog Posts Area -->
+            <div id="posts-container">
+                <!-- Posts will be dynamically inserted here -->
+                <div style="text-align: center; padding: 3rem;">
+                    <i class="fas fa-spinner fa-spin" style="font-size: 2rem; color: var(--primary-color);"></i>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">載入文章中...</p>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">搜尋文章</h3>
+                    <div style="position: relative;">
+                        <input type="text" placeholder="關鍵字搜尋..." class="form-control" style="padding-right: 2.5rem;"
+                            id="search-input" onkeyup="filterPosts()">
+                        <i class="fas fa-search"
+                            style="position: absolute; right: 10px; top: 12px; color: var(--text-muted);"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="sidebar-title">文章分類</h3>
+                    <ul class="category-list" id="category-list">
+                        <li class="category-item active" data-category="all" onclick="selectCategory('all', this)">
+                            <span><i class="fas fa-layer-group category-icon"></i> 全部文章</span>
+                            <span class="category-count" id="count-all">0</span>
+                        </li>
+                        <li class="category-item" data-category="媒體報導" onclick="selectCategory('媒體報導', this)">
+                            <span><i class="fas fa-newspaper category-icon"></i> 媒體報導</span>
+                            <span class="category-count" id="count-媒體報導">0</span>
+                        </li>
+                        <li class="category-item" data-category="研究集錦" onclick="selectCategory('研究集錦', this)">
+                            <span><i class="fas fa-microscope category-icon"></i> 研究集錦</span>
+                            <span class="category-count" id="count-研究集錦">0</span>
+                        </li>
+                        <li class="category-item" data-category="科普撰文" onclick="selectCategory('科普撰文', this)">
+                            <span><i class="fas fa-book-open category-icon"></i> 科普撰文</span>
+                            <span class="category-count" id="count-科普撰文">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="https://www.nycu.edu.tw/nycu/ch/index" target="_blank" rel="noopener noreferrer">
+                    <img src="images/viewtopimage.svg" alt="國立陽明交通大學" class="footer-nycu-logo">
+                </a>
+                <a href="https://icm.nycu.edu.tw/" target="_blank" rel="noopener noreferrer"
+                    class="footer-institute-link">臨床醫學研究所</a>
+                <div class="footer-lab-title">陳斯婷老師實驗室</div>
+            </div>
+            <div>
+                <h4 style="margin-bottom: 1rem; font-family: var(--font-heading);">聯絡我們</h4>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem;"><i
+                        class="fas fa-map-marker-alt"></i> 112台北市北投區立農街二段155號 守仁樓2樓</p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 0.5rem;"><i
+                        class="fas fa-phone-alt"></i> 02-28267000 #66519</p>
+                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.9);"><i class="fas fa-envelope"></i>
+                    chensztin@nycu.edu.tw</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 CST Lab 免疫與發炎生物學研究室. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
